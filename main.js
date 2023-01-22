@@ -9,8 +9,9 @@ function preload(){
 function draw(){
     image(img,0,0,640,420)
    fill("blue")
-   nofill()
-   text("dog,cat")
+  
+   text("dog,cat",50,50)
+   noFill()
    stroke("blue")
    rect(50,50,400,300)
 }
