@@ -20,7 +20,7 @@ function draw(){
    text("cat",50,50)
    noFill()
    stroke("yellow")
-   rect(50,50,400,300)
+   rect(50,50,250,300)
 }
 function modelLoaded(){
     console.log("model loaded")
