@@ -15,6 +15,7 @@ function draw(){
     image(img,0,0,640,420)
   if(status!=""){
     for(n=0; n<object.length; n++){
+        console.log(n)
         document.getElementById("staus").innerHTML = "status = object detected"
         fill("blue");
         percent= floor(object[n].confidence*100)
