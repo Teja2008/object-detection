@@ -1,3 +1,6 @@
+img="s"
+status=""
+object=[]
 function setup(){
     canvas=createCanvas(640,420)
     canvas.center()
@@ -10,17 +13,18 @@ function preload(){
 }
 function draw(){
     image(img,0,0,640,420)
-   fill("blue")
-   text("dog",50,50)
-   noFill()
-   stroke("blue")
-   rect(50,50,400,300)
-  
-   fill("yellow")
-   text("cat",50,50)
-   noFill()
-   stroke("yellow")
-   rect(50,50,250,300)
+  if(status!=""){
+    for(n-0; n<object.length; n++){
+        document.getElementById("staus").innerHTML = "status = object detected"
+        fill("blue");
+        percent= floor(object[n].confidence*100)
+        text(object[n].label+ percent+"%", object[n].x, object[n].y)
+        noFill()
+        stroke("blue")
+        rect(object[n].x,object[n].y,object[n].width,object[n].height)
+
+    }
+  }
 }
 function modelLoaded(){
     console.log("model loaded")
