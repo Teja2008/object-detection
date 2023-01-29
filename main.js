@@ -16,7 +16,7 @@ function draw(){
   if(status!=""){
     for(n=0; n<object.length; n++){
         console.log(n)
-        document.getElementById("staus").innerHTML = "status = object detected"
+        document.getElementById("status").innerHTML = "status = object detected"
         fill("blue");
         percent= floor(object[n].confidence*100)
         text(object[n].label+ percent+"%", object[n].x, object[n].y)
