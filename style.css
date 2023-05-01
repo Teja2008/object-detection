@@ -1,22 +1,3 @@
 body{
-    background-image:url( "background.jpg");
-   background-size: cover;
+    background-image: linear-gradient(rgb(0, 162, 255),rgb(12, 207, 12),pink,rgb(224, 17, 224));
 }
-.heading
-{
-font-size: 23px;
-width: 100%;
-margin: 0px;
-}
-
-#status
-{
-font-size: 18px;
-}
-canvas{
-    border-color: aqua;
-    border:5px;
-    border-style: solid;
-    margin-top: 30px;
-}
-
